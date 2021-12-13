@@ -39,6 +39,7 @@ namespace Task_15
         public void Reset()
         {
             xi = x0;
+            Console.WriteLine("Произведен сброс к начальному члену прогрессии N1 = {0}", xi);
         }
 
     }
@@ -69,6 +70,7 @@ namespace Task_15
         public void Reset()
         {
             xi = x0;
+            Console.WriteLine("Произведен сброс к начальному члену прогрессии N1 = {0}", xi);
         }
 
     }
@@ -105,9 +107,6 @@ namespace Task_15
                         }
 
                         arithProgression.Reset();
-                        Console.WriteLine();
-                        Console.WriteLine("Произведен сброс к начальному члену прогрессии N1 = {0}", x0);
-
                         Console.ReadKey();
 
                         break;
@@ -140,9 +139,6 @@ namespace Task_15
                         }
 
                         geomProgression.Reset();
-                        Console.WriteLine();
-                        Console.WriteLine("Произведен сброс к начальному члену прогрессии N1 = {0}", x0);
-
                         Console.ReadKey();
 
                         break;
@@ -168,7 +164,7 @@ namespace Task_15
                     byte select = Convert.ToByte(Console.ReadLine());
                     error = false;
                     selection = select;
-                    if (select > 3 || select < 1)
+                    if (select >= 3 || select < 1)
                     {
                         Console.WriteLine("Ошибка! Введите номер требуемого метода 1 или 2");
                         error = true;
