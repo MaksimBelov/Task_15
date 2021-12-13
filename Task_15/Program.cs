@@ -108,7 +108,6 @@ namespace Task_15
 
                         arithProgression.Reset();
                         Console.ReadKey();
-
                         break;
                     }
 
@@ -140,7 +139,6 @@ namespace Task_15
 
                         geomProgression.Reset();
                         Console.ReadKey();
-
                         break;
                     }
             }
